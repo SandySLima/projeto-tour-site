@@ -1,0 +1,144 @@
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.container_video_tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.video_tour video {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+  max-height: 330px; 
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: black;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.video_tour_legenda {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.tour_paragrafo, .tour_ultimo_paragrafo {
+  width: 80%;
+  margin: 0 auto 1.5rem auto;
+}
+
+.tour_paragrafo {
+  text-align: justify;
+}
+
+.tour_ultimo_paragrafo {
+  text-align: center;
+}
+
+.destaque_texto_tour, .video_tour_legenda {
+  color: var(--azul-celeste);
+  font-weight: bold;
+}
+
+.container_reverie_album {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 100%; 
+  padding: 0 1rem; 
+  box-sizing: border-box;
+}
+
+.reverie_album_capa img,
+.reverie_album_iframe iframe {
+  max-width: 100%; 
+  width: 280px;   
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  object-fit: cover;
+  background: transparent;  /* p/ remover fundo preto do iframe */
+  border: none;             /* p/ remover borda do iframe */
+  transition: all 0.3s ease-in-out;
+}
+.reverie_album_capa {
+  display:block;
+}
+
+.reverie_album_iframe  {
+  display: none;
+
+}
+
+.musicas_select{
+  background-color: var(--branco);
+  border: 2px solid var(--azul-celeste);
+  color: var(--azul-escuro);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Controle pro vídeo crescer de forma mais suave e não brusca */
+@media (min-width: 480px) {
+  .video_tour video {
+    max-width: 360px;
+    max-height: 360px;
+  }
+  
+ .musicas_select {
+    margin-bottom: 7.5rem;
+    margin-top: 1.5rem;
+}
+}
+
+@media (min-width: 640px) {
+  .video_tour video {
+    max-width: 400px;
+    max-height: 390px;
+  }
+
+  .musicas_select {
+    margin: auto;
+  }
+}
+
+/* Telas maiores*/
+@media (min-width: 768px) {
+  .video_tour video {
+    max-width: 475px;   
+    max-height: 454px;  
+  }
+}
+
+@media (min-width: 1024px) {
+  .video_tour video {
+    max-width: 460px;
+    max-height: 440px;
+  }
+} 
+
+video:fullscreen {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+}

@@ -1,0 +1,135 @@
+/* Menu de navegação da página */
+.nav_bar_menu_hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url(../recursos/imagens/menu_site.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display:flex;
+    align-items:center;
+} 
+
+.container_titulo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.container_imagem {
+    padding: 1em;
+}
+
+.lista_menu {
+    display:none;
+    position:absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container_titulo_destaque {
+    color:var(--azul-escuro);
+}
+
+.container_botao:checked ~ .lista_menu {
+    display: block;
+}
+
+.lista_menu_titulo, .lista_menu_item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista_menu_titulo {
+    color: var(--azul-escuro);
+    font-weight: 700;
+}
+
+.lista_menu_link {
+    color: var(--azul-escuro);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container_botao, .opcoes, .container_texto {
+    display: none;
+}
+
+.container_botao:checked~.container_rotulo >.nav_bar_menu_hamburguer {
+    background-image: url(../recursos/imagens/menu_aberto.svg);
+
+}
+
+.container_botao:checked~.container_rotulo {
+    background: var(--azul-escuro);
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Barra de navegação */
+
+  .container_botao,
+  .container_rotulo,
+  .nav_bar_menu_hamburguer,
+  .container_link,
+  .container_texto,
+  .container_imagem,
+  .opcoes_botao,
+  .opcoes_rotulo,
+  .opcoes_link {
+    display: none;
+  }
+
+  .container .lista_menu {
+    display: none;
+  }
+
+  .opcoes {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .opcoes .lista_menu {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    padding: 0;
+    position: static;
+    background: none;
+    width: auto;
+  }
+
+  .lista_menu_item a {
+    text-decoration: none;
+    color: var(--azul-escuro);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .container_titulo {
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    margin-top: 0.5em;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+  }
+}

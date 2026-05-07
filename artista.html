@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
+    <title>Baekhyun Tour</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <!-- PRIMEIRO BLOCO: menu hamburguer + título -->
+        <div class="container">
+            <input type="checkbox" id="menu" class="container_botao">
+            <label for="menu" class="container_rotulo">
+                <span class="nav_bar_menu_hamburguer container_imagem"></span>
+            </label>
+
+            <!-- Menu lateral -->
+            <ul class="lista_menu">
+                <li class="lista_menu_titulo">Categorias</li>
+                <li class="lista_menu_item"><a href="index.html" class="lista_menu_link">Início</a></li>
+                <li class="lista_menu_item"><a href="artista.html" class="lista_menu_link">O Artista</a></li>
+                <li class="lista_menu_item"><a href="tour.html" class="lista_menu_link">A Tour</a></li>
+                <li class="lista_menu_item"><a href="datas.html" class="lista_menu_link">Datas</a></li>
+                <li class="lista_menu_item"><a href="galeria.html" class="lista_menu_link">Galeria</a></li>
+            </ul>
+
+            <h2 class="container_titulo"><span class="container_titulo_destaque">Reverie</span> Tour</h2>
+        </div>
+
+        <!-- SEGUNDO BLOCO: opções do menu no desktop -->
+        <div class="opcoes">
+            <input type="checkbox" id="opcoes_menu" class="opcoes_botao">
+            <label for="opcoes_menu" class="opcoes_rotulo">Categorias</label>
+
+            <ul class="lista_menu">
+                <li class="lista_menu_item"><a href="index.html" class="lista_menu_link">Início</a></li>
+                <li class="lista_menu_item"><a href="artista.html" class="lista_menu_link">O Artista</a></li>
+                <li class="lista_menu_item"><a href="tour.html" class="lista_menu_link">A Tour</a></li>
+                <li class="lista_menu_item"><a href="datas.html" class="lista_menu_link">Datas</a></li>
+                <li class="lista_menu_item"><a href="galeria.html" class="lista_menu_link">Galeria</a></li>
+            </ul>
+
+            <a href="datas.html" class="opcoes_link">Comprar</a>
+        </div>
+
+        <!-- TERCEIRO BLOCO: ícone de compras -->
+        <div class="container">
+            <a href="datas.html" class="container_link">
+                <img src="./recursos/imagens/compras.svg" alt="Minhas compras" class="container_imagem">
+                <p class="container_texto">Comprar Ingressos</p>
+            </a>
+            </div>
+    </header>
+    <main>
+        <div class="container_artista">
+            <img src="./recursos/imagens/img-baekhyun-pag-artista.jpg" alt="Foto conceitual do artista Baekhyun usando um chapéu"  class="img_pag_artista">
+            <h1 id="titulo_artista">O Artista</h1>
+            <p>Byun Baekhyun (em coreano: <span class="destaque_texto_artista">변백현</span>) é um cantor, dançarino e ator, nascido no ano de 1992, em Bucheon, Coreia do Sul. Sua carreira começou em 2012 com o grupo EXO, um dos boygroups mais populares da história do K-pop, onde passou a ocupar a posição de vocalista principal. Desde então, Baekhyun também integrou a sub-unit EXO-CBX e o grupo SUPERM, no qual assumiu o papel de líder.</p>
+            <p>Em julho de 2019, estreou como artista solo com o mini-álbum <span class="destaque_texto_artista">City Lights</span> e tem ganhado cada vez mais destaque na indústria coreana, acumulando mais de 5 milhões de cópias vendidas com seus álbuns.</p>
+            <p>Além da música, Baekhyun é embaixador da grife britânica Burberry, modelo da marca de beleza coreana TirTir, co-diretor criativo da marca Privé Alliance e fundador da empresa INB100, por onde está promovendo seu trabalho mais recente.</p>
+        </div>
+
+        <div class="container_tabela">
+            <table class="discografia_baekhyun">
+                <caption id="legenda_discografia">Discografia</caption>
+                <thead class="titulos_tabela">
+                    <tr>
+                        <th>Ano</th>
+                        <th>Álbum</th>
+                        <th>Faixa-Título</th>
+                        <th>Capa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="linha_tabela">
+                        <td>2019</td>
+                        <td>City Lights</td>
+                        <td>Un Village</td>
+                        <td class=tabela_capa><img src="./recursos/imagens/city-lights-capa.png" alt="Capa do álbum City Lights" width="100"></td>
+                    </tr>
+                    <tr class="linha_tabela">
+                        <td>2020</td>
+                        <td>Delight</td>
+                        <td>Candy</td>
+                        <td class="tabela_capa"><img src="./recursos/imagens/delight-capa.jpg" alt="Capa do álbum Delight" width="100"></td>
+                    </tr>
+                    <tr class="linha_tabela">
+                        <td>2021</td>
+                        <td>Bambi</td>
+                        <td>Bambi</td>
+                        <td class="tabela_capa"><img src="./recursos/imagens/bambi-capa.png" alt="Capa do álbum Bambi" width="100"></td>
+                    </tr>
+                    <tr class="linha_tabela">
+                        <td>2021</td>
+                        <td>Baekhyun - Especial japonês</td>
+                        <td>Get You Alone</td>
+                        <td class="tabela_capa"><img src="./recursos/imagens/baekhyun-jap-capa.png" alt="Capa do álbum japonês intitulado Baekhyun" width="100"></td>
+                    </tr>
+                    <tr class="linha_tabela">
+                        <td>2024</td>
+                        <td>Hello, World!</td>
+                        <td>Pineapple Slice</td>
+                        <td class="tabela_capa"><img src="./recursos/imagens/hello-world-capa.png" alt="Capa do álbum Hello, World!" width="100"></td>
+                    </tr>
+                    <tr class="linha_tabela">
+                        <td>2025</td>
+                        <td>Essence of Reverie</td>
+                        <td>Chocolate / Elevator</td>
+                        <td class="tabela_capa"><img src="./recursos/imagens/essence-reverie-capa.webp" alt="Capa do álbum Essence of Reverie" width="100"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_container_redes">
+                <p>O acompanhe nas redes sociais:</p>
+                <a href="https://www.instagram.com/baekhyunee_exo/" target="_blank">
+                <img src="./recursos/imagens/icone-instagram.svg" alt="Ícone Instagram" width="24" height="24">
+                </a>
+                <a href="https://www.youtube.com/@INB100_official" target="_blank">
+                <img src="./recursos/imagens/icone-youtube.svg" alt="Ícone YouTube" width="24" height="24">
+                </a>
+                <a href="https://x.com/BAEKHYUN_INB100" target="_blank">
+                <img src="./recursos/imagens/icone-twitter.svg" alt="Ícone Twitter" width="24" height="24">
+                </a>
+            </div>
+            <div class="footer_container_direitos">
+                <p>© 2025 BAEKHYUN Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

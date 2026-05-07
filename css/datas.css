@@ -1,0 +1,57 @@
+.container_datas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_datas {
+    text-align: center;
+    padding: 1.5rem;
+}
+.status_esgotado {
+    color: var(--marrom-avermelhado);
+    font-weight: medium;
+}
+
+button {
+    text-decoration: none;
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+    border: 2px solid var(--azul-escuro);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--hover-suave);
+  color: var(--branco);
+}
+
+/* Estilo dos botões apenas dentro do formulário */
+.formulario_ingresso button {
+  background-color: var(--cinza-bem-clarinho);
+  color: var(--cinza-escuro);
+  border: 1.5px solid var(--cinza-medio);
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.formulario_ingresso button:hover {
+  background-color: var(--cinza-claro);
+  color: #000;
+}
+
+.infos_pessoais {
+    display: flex;
+    gap: 1rem;
+}

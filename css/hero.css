@@ -1,0 +1,59 @@
+.container_hero .img_hero_imagem {
+    width: 100%;
+}
+
+.img_hero_imagem {
+  margin-bottom: 2rem; 
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+.titulo_hero, .subtitulo_hero, .p_hero {
+    text-align: center;
+}
+
+.titulo_hero {
+    font-weight: 600;
+}
+
+.subtitulo_hero {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: var(--azul-escuro);
+    font-weight: 400;
+}
+
+.p_hero {
+    margin-bottom: 1rem;
+}
+
+.hero_saber_mais {
+    display: flex;
+    justify-content: center;
+}
+
+.link_hero {
+    text-decoration: none;
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+    border: 2px solid var(--azul-escuro);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.link_hero:hover {
+  background-color: var(--hover-suave);
+  color: var(--branco);
+}
+
+@media (max-width: 768px) {
+    .p_hero {
+        text-align:justify;
+    }
+}

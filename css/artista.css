@@ -1,0 +1,88 @@
+.container_artista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem; 
+}
+
+.img_pag_artista {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+#titulo_artista {
+  margin-bottom: 2.5rem;
+}
+
+.container_artista p {
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+.destaque_texto_artista {
+  color: var(--azul-escuro);
+  font-weight: bold;
+}
+
+.discografia_baekhyun {
+  border: 2px solid #C9EAF5;
+  border-collapse: collapse;
+  margin: 2rem auto;
+  width: 95%;          
+  max-width: 850px;    
+  table-layout: fixed;
+  box-sizing: border-box;
+  padding: 0 0.5rem;   
+}
+
+tr, th, td {
+  border: 1px solid #C9EAF5;
+}
+
+.titulos_tabela {
+  background-color: var(--azul-clarinho);
+}
+
+.linha_tabela {
+  text-align: center;
+}
+
+h1, #legenda_discografia, .titulos_tabela {
+  font-family: 'Playfair Display', serif;
+}
+
+#legenda_discografia {
+  font-weight: 500;
+}
+
+td {
+  font-weight: 300;
+}
+
+.tabela_capa {
+  width: 100%;
+  max-width: 150px; 
+  aspect-ratio: 1 / 1;
+  padding: 0.5em;
+  margin: auto;
+}
+
+.tabela_capa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .container_artista {
+    padding: 0 2rem; 
+  }
+  
+  .discografia_baekhyun {
+    margin: 3rem auto;
+    width: 90%;          
+    max-width: 800px;    
+  }
+}

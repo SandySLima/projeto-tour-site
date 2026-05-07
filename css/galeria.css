@@ -1,0 +1,64 @@
+
+.bloco_fotos {
+    background-color: var(--branco-fundo-azul);
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+
+.descricao_imagens {
+    padding: 1.5rem;
+}
+
+.bloco_fotos_performance, 
+.bloco_fotos_brasil, 
+.bloco_fotos_descontraido, 
+.bloco_fotos_fim_show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.imagens_performance, 
+.imagens_brasil, 
+.imagens_descontraido,
+.imagens_fim_show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.imagens_performance img, 
+.imagens_brasil img, 
+.imagens_descontraido img,
+.imagens_fim_show img {
+    width: 100%;
+    max-width: 280px;     
+    aspect-ratio: 4 / 5;  /* Obs: pra manter a proporção equilibrada. */
+    object-fit: cover;    /* Manter enquadrada */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.imagens_performance img:hover,
+.imagens_brasil img:hover,
+.imagens_descontraido img:hover,
+.imagens_fim_show img:hover {
+    transform: scale(1.1); /* aumento da imagem em 10% */
+    z-index: 10; /* garante que fique sobre os outros elementos */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}

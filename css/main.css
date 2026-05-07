@@ -1,0 +1,36 @@
+@import url(./footer.css);
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./artista.css);
+@import url(./tour.css);
+@import url(./datas.css);
+@import url(./galeria.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --azul-clarinho:#C9EAF5;
+  --branco: #FFFFFF;
+  --azul-escuro: #2278A1;
+  --preto: #000000;
+  --azul-celeste: #33A7D3;
+  --hover-suave: #2A90BA;
+  --branco-fundo-azul: #f0f4f8;
+  --marrom-avermelhado: #B94E48;
+  --cinza-bem-clarinho: #f4f4f4;
+  --cinza-claro: #dddddd;
+  --cinza-medio: #bbbbbb;
+  --cinza-escuro: #333333;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+
